@@ -1,5 +1,6 @@
 # fatigue_robustness
 August 20, 2026
+
 This repository contains the raw data files and R scripts necessary to replicate the results of the study
 *The storage and release of energy from elastic tissues is unaffected by muscle fatigue* by Jeffrey P. Olberding. This is a study of the effects of muscle fatigue on the ability of elastic tissues to store and release energy during isotonic and Latch-mediated Spring Actuation (LAMSA) type contractions.
 
