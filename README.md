@@ -20,6 +20,7 @@ Analyses were performed using RStudio V.2024.04 (Posit Software, PBC) running R 
    - Muscle Mass (kg) - The mass of the muscle used for recording
    - MTU Length (mm) - The length of the muscle used for recording
    - Force Threshold (N) - The % of maximum isometric tension used to define the load of the contraction.
+
 **3. "Analyze ISO Fatigue V3.r"** - Script used to analyze an individual isotonic type contraction.
    - Raw data files of isotonic contractions are indicated by a file name containing "Iso", e.g. "*10_02_23_Muscle1_Iso20_After.txt*"
    - This script requires edits to include metadata matching the individual trials being analyzed. Specifically, MTU Length from Metadata.csv must be entered in line 6.
