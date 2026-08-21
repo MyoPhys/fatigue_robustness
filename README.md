@@ -23,20 +23,20 @@ Analyses were performed using RStudio V.2024.04 (Posit Software, PBC) running R 
 
 **3. "Analyze ISO Fatigue V3.r"** - Script used to analyze an individual isotonic type contraction.
    - Raw data files of isotonic contractions are indicated by a file name containing "Iso", e.g. "*10_02_23_Muscle1_Iso20_After.txt*"
-   - This script requires edits to include metadata matching the individual trials being analyzed. Specifically, MTU Length from Metadata.csv must be entered in line 6.
+   - This script requires edits to include metadata matching the individual trials being analyzed. Specifically, MTU Length from *Metadata.csv* must be entered in line 6.
    - Outputs the following variables: averageforce, tendonlength, maxshortening, maxcontraction, timetoshort, loadenergy, peakfasciclev, peakfasciclep
    - All raw files for isotonic type contractions were analyzed and data were compiled into *Isotonic Data V2.csv*.
    - This script will create a plot of the data for the individual trial being run and was used in the creation of Figure 3.
      
 **4. "Analyze LAMSA Fatigue V3.r"** - Script used to analyze an individual LaMSA type contraction.
    - Raw data tiles of LAMSA type contractions are indicated by a file name containing "LAMSA", e.g. "*10_02_23_Muscle1_LAMSA20_After.txt*"
-   - This script requires edits to include metadata matching the individual trials being analyzed. Specifically, MTU Length, Muscle Mass, and Force Threshold from Metadata.csv must be entered in lines 6, 7, and 8, respectively.
+   - This script requires edits to include metadata matching the individual trials being analyzed. Specifically, MTU Length, Muscle Mass, and Force Threshold from *Metadata.csv* must be entered in lines 6, 7, and 8, respectively.
    - Outputs the following variables: max_tendon, max_force, load_pre, overshoot, e_return,direct,  peak_tendonp, peak_fasciclep, peak_MTUp, peak_fasciclev, loading_power, loading_time, recoiltime
    - All raw files for LAMSA type contractions were analyzed and data were compiled into *LAMSA Data V3.csv*
    - This script will create a plot of the data for the individual trial being run and was used in the creation of Figures 4 and 5.
      
 **5. "Isotonic Data V2.csv"** - File containing the compiled output from analyzing raw data files using *Analyze ISO Fatigue V3.r*.
-     - Variables include metadata, as well as, averageforce, tendonlength, maxshortening, maxcontraction, timetoshort, loadenergy, peakfasciclev, peakfasciclep output from *Analyze ISO Fatigue V3.r* and tendon stiffness, mms elastic, mms muscle, mms p calculated from those output variables.
+- Variables include metadata, as well as, averageforce, tendonlength, maxshortening, maxcontraction, timetoshort, loadenergy, peakfasciclev, peakfasciclep output from *Analyze ISO Fatigue V3.r* and tendon stiffness, mms elastic, mms muscle, mms p calculated from those output variables.
      
 **6. "Analyze Isotonic Results v2.r"** - Script use to generate descriptive statistics, run ANOVAs, and create box plots the compiled isotonic data.
   - This script runs file *Isotonic Data V2.csv*
@@ -45,7 +45,7 @@ Analyses were performed using RStudio V.2024.04 (Posit Software, PBC) running R 
      - This script creates boxplots for all variables, which were used to create Figure 6.
 
 **7. "LAMSA Data V3.csv"** - File containing the compiled output from analyzing raw data files using *Analyze LAMSA Fatigue V3.r*.
-     - Variables include metadata, as well as, max_tendon, max_force, load_pre, overshoot, e_return,direct,  peak_tendonp, peak_fasciclep, peak_MTUp, peak_fasciclev, loading_power, loading_time, recoiltime output from *Analyze LAMSA Fatigue V3.r* and mms.pre, mms.over, mms.return, mms.direct, tendon.stiffness, efficiency calculated from those output variables.
+- Variables include metadata, as well as, max_tendon, max_force, load_pre, overshoot, e_return,direct,  peak_tendonp, peak_fasciclep, peak_MTUp, peak_fasciclev, loading_power, loading_time, recoiltime output from *Analyze LAMSA Fatigue V3.r* and mms.pre, mms.over, mms.return, mms.direct, tendon.stiffness, efficiency calculated from those output variables.
 
 **8. "Analyze LAMSA Results v2.r"** - Script use to generate descriptive statistics, run ANOVAs, and create box plots the compiled LAMSA data.
   - This script runs file *LAMSA Data V3.csv*
