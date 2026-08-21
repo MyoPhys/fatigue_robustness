@@ -39,16 +39,16 @@ Analyses were performed using RStudio V.2024.04 (Posit Software, PBC) running R 
 - Variables include metadata, as well as, averageforce, tendonlength, maxshortening, maxcontraction, timetoshort, loadenergy, peakfasciclev, peakfasciclep output from *Analyze ISO Fatigue V3.r* and tendon stiffness, mms elastic, mms muscle, mms p calculated from those output variables.
      
 **6. "Analyze Isotonic Results v2.r"** - Script use to generate descriptive statistics, run ANOVAs, and create box plots the compiled isotonic data.
-  - This script runs file *Isotonic Data V2.csv*
-   - This script outputs descriptive statistics for variables. Lines 24-31 must be edited by replacing "tendonp" with the variable of interest. These were used to create Table 2.
-     - This script runs ANOVAs on all variables and outputs statistical summaries.
-     - This script creates boxplots for all variables, which were used to create Figure 6.
+- This script analyzes file *Isotonic Data V2.csv*
+- This script outputs descriptive statistics for variables. Lines 24-31 must be edited by replacing "tendonp" with the variable of interest. These were used to create Table 2.
+- This script runs ANOVAs on all variables and outputs statistical summaries.
+- This script creates boxplots for all variables, which were used to create Figure 6.
 
 **7. "LAMSA Data V3.csv"** - File containing the compiled output from analyzing raw data files using *Analyze LAMSA Fatigue V3.r*.
 - Variables include metadata, as well as, max_tendon, max_force, load_pre, overshoot, e_return,direct,  peak_tendonp, peak_fasciclep, peak_MTUp, peak_fasciclev, loading_power, loading_time, recoiltime output from *Analyze LAMSA Fatigue V3.r* and mms.pre, mms.over, mms.return, mms.direct, tendon.stiffness, efficiency calculated from those output variables.
 
 **8. "Analyze LAMSA Results v2.r"** - Script use to generate descriptive statistics, run ANOVAs, and create box plots the compiled LAMSA data.
-  - This script runs file *LAMSA Data V3.csv*
-   - This script outputs descriptive statistics for variables. Lines 24-31 must be edited by replacing "tendonp" with the variable of interest. These were used to create Table 4.
-     - This script runs ANOVAs on all variables and outputs statistical summaries.
-     - This script creates boxplots for all variables, which were used to create Figure 6.
+- This script analyzes file *LAMSA Data V3.csv*
+- This script outputs descriptive statistics for variables. Lines 24-31 must be edited by replacing "tendonp" with the variable of interest. These were used to create Table 4.
+- This script runs ANOVAs on all variables and outputs statistical summaries.
+- This script creates boxplots for all variables, which were used to create Figure 6.
