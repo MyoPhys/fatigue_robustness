@@ -1,7 +1,13 @@
 # fatigue_robustness
-Files and code for original manuscript on fatigue robustness
+August 20, 2026
+This repository contains the raw data files and R scripts necessary to replicate the results of the study
+**The storage and release of energy from elastic tissues is unaffected by muscle fatigue** by Jeffrey P. Olberding. This is a study of the effects of muscle fatigue on the ability of elastic tissues to store and release energy during isotonic and Latch-mediated Spring Actuation (LAMSA) type contractions.
 
-1. "Raw Data" - folder containing raw data files from contractile experiments.
+**Data use license agreement: These data are provided only for reviewers and readers to check and replicate my analyses. For use of the data in other original research, please contact Jeffrey Olberding for permission.**
+
+Analyses were performed using RStudio V.2024.04 (Posit Software, PBC) running R V.4.4.1 (R Core Team).
+
+**1. "Raw Data"** - folder containing raw data files from contractile experiments.
    Data files are names using the convention Date_Muscle number_Type of contraction_Before or after fatigue.
    
 2. "Metadata.csv" - csv file containing data unique to each recording needed for analysis. The following columns are defined:
@@ -24,6 +30,7 @@ Files and code for original manuscript on fatigue robustness
    - This script requires edits to include metadata matching the individual trials being analyzed. Specifically, MTU Length, Muscle Mass, and Force Threshold from Metadata.csv must be entered in lines 6, 7, and 8, respectively.
    - Outputs the following variables: max_tendon, max_force, load_pre, overshoot, e_return,direct,  peak_tendonp, peak_fasciclep, peak_MTUp, peak_fasciclev, loading_power, loading_time, recoiltime
    - All raw files for LAMSA type contractions were analyzed and data were compiled into *LAMSA Data V3.csv*
-   - Data were compiled in creation of Table 3. Individual plots were used in the creation of Figures 4 and 5.
+   - This script will create a plot of the data for the individual trial being run and was used in the creation of Figures 4 and 5.
+7. "LAMSA Data V3.csv" 
 8. "Analyze ISO Results v2.r" - code to run ANOVAs and create boxplots for isotonic data. Used to create Table 2 and Figure 6.
 9. "Analyze LAMSA Results v2.r" - code to run ANOVAs and create boxplots for LaMSA data. Used to create Table 4 Figure 6.
